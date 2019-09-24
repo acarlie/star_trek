@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#4b6cb7;
+    --color-secondary:;
+    --color-danger:;
+    --color-light:#fff;
+    --color-med:;
+    --color-dark:;
+}
+
+body{
+    background: var(--color-primary);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(-45deg, #182848, var(--color-primary));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(-45deg, #182848, var(--color-primary)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height: 100vh;
+    color: #fff;
+
+}
+
+/* ----------------Typography---------------- */
+h1, h2, .button{
+    font-family: 'Teko', sans-serif;
+}
+
+
+/* ----------------Buttons---------------- */
+.button{
+    font-size: 2em;
+    padding: .25em 2em .15em 2em;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0s linear;
+    height: 100%;
+    margin-top: 1em;
+}
+
+.button:focus{
+    outline:0;
+}
+
+.button-outline{
+    border-radius: 2em;
+    color: var(--color-light);
+    border: 1px solid var(--color-light);
+}
+
+.button-outline:hover, .button-outline:focus{
+    background-color: var(--color-light);
+    color: var(--color-primary);
+    box-shadow: none;
+}
+
+/* ----------------Media Queries---------------- */
+/*Desktop*/
+@media only screen and (min-width: 1200px) {
+
+    .container{
+        width: 45%;
+        text-align: center;
+    }
+}
+
+/*Tablet/Ipad*/
+@media only screen and (max-width: 1199px) and (min-width: 890px) {
+   
+}
