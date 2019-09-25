@@ -4,7 +4,7 @@ const fs = require('fs');
 
 module.exports = function(app, path){
 
-    let friends = JSON.parse(fs.readFileSync('./data/friends.json', 'utf-8'));
+    let friends = JSON.parse(fs.readFileSync('./app/data/friends.json', 'utf-8'));
 
     app.get("/api/friends", function(req, res) {
         return res.json(friends);
