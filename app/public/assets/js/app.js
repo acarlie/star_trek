@@ -1,31 +1,31 @@
 const util = {
-    getVal: (id) => $('#' + id).val().trim(),
-
+    getQuestions: function(num){
+        let questionsArr = [];
+        for (i = 1; i <= num; i++){
+            questionsArr = questionsArr.concat(['#question_' + i]);
+        }
+        return questionsArr.map(x => $(x).val().trim());
+    }
 }
+
 
 $(document).ready(function(){
     $('.ui.dropdown').dropdown();
-
-    // $("#add-btn").on("click", function(event) {
-    //     event.preventDefault();
-    //     var newCharacter = {
-    //       name: $("#name").val().trim(),
-    //       role: $("#role").val().trim(),
-    //       age: $("#age").val().trim(),
-    //       forcePoints: $("#force-points").val().trim()
-    //     };
   
-    //     // Question: What does this code do??
-    //     $.post("/api/characters", newCharacter)
-    //       .then(function(data) {
-    //         console.log("add.html", data);
-    //         alert("Adding character...");
-    //       });
-    //   });
-
     $("#submit").on("click", function(e){
         event.preventDefault();
-        console.log(util.getVal("name"));
+        let scores = util.getQuestions(10);
+
+        var newFriend = {
+            name: $('#name').val().trim(),
+            photo: $('#img').val().trim(),
+            scores: scores
+        }
+
+        $.post("/api/friends", newFriend)
+            .then(function(data) {
+                // console.log(data);
+            });
     });
   
 });

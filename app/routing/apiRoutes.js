@@ -1,5 +1,4 @@
 
-// * A POST routes `/api/friends`. This will be used to handle incoming survey results. This route will also be used to handle the compatibility logic.
 const fs = require('fs');
 
 module.exports = function(app, path){
@@ -10,6 +9,22 @@ module.exports = function(app, path){
         return res.json(friends);
     });
     
-    //need to add post
+    app.post("/api/friends", function(req, res) {
+        let newFriend = req.body;
+        newFriend.scores = newFriend.scores.map(x => parseInt(x));
+
+        let together = friends.concat([newFriend]);
+        let json = JSON.stringify(together, null, 4);
+        
+        fs.writeFile("./app/data/friends.json", json, function(err) {
+            if (err) {
+                return console.log(err);
+            }
+        });
+      
+        res.json(newFriend);
+    });
+      
+      
 }
 

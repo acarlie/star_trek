@@ -1,7 +1,3 @@
-
-//    * A GET Route to `/survey` which should display the survey page.
-//    * A default, catch-all route that leads to `home.html` which displays the home page.
-
 module.exports = function(app, path){
 
     app.get("/", function(req, res) {
@@ -12,5 +8,4 @@ module.exports = function(app, path){
         res.sendFile(path.join(__dirname, "/../public/survey.html"));
     });
     
-    //other routes..
 }
