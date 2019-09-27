@@ -15,59 +15,71 @@ const util = {
             }]
         }
     },
+    val: function (id){
+        return $('#' + id).val().trim()
+    },
     getQuestions: function(num){
         let questionsArr = [];
-        for (i = 1; i <= num; i++){
+        for (i = 0; i < num; i++){
             questionsArr = questionsArr.concat(['question_' + i]);
         }
         return questionsArr;
     },
     getVals: function(arr){
-        return arr.map(x => $('#' + x).val().trim());
+        return arr.map(x => this.val(x));
     },
-    setFields: function(arr){
-        for (let x of arr){
-            util.fields[x] = {
-                identifier: x,
+    setFields: function(arr, obj){
+        let fields = {...obj};
+
+        arr.forEach(el => {
+            fields[el] = {
+                identifier: el,
                 rules: [
                     {type: 'empty', prompt: 'Please choose an answer'}
                 ]
             }
-        }
+        });
+
+        return fields;
+    },
+    newFriend: function(name, img, arr){
+        return {name: name, photo: img, scores: arr};
     }
 }
 
 
 $(document).ready(function () {
-    let questions = util.getQuestions(10);
+
+    // initialization of Semantic UI dropdowns
     $('.ui.dropdown').dropdown();
 
-    util.setFields(questions);
+    // generating question ids and creating question rules
+    let questions = util.getQuestions(10);
+    let fieldsObj = util.setFields(questions, util.fields);
 
-    console.log(util.fields);
-
+    // Semantic UI's form handling
     $('.ui.form').form({
         on: 'blur',
         inline: true,
-        fields: util.fields,
+
+        // sets field rules
+        fields: fieldsObj,
+
+        // if all fields are validated
         onSuccess: function () {
+
             alert('Success');
             let scores = util.getVals(questions);
+            let newFriend = util.newFriend( util.val('name'), util.val('img'), scores);
 
-            var newFriend = {
-                name: $('#name').val().trim(),
-                photo: $('#img').val().trim(),
-                scores: scores
-            }
-            console.log(newFriend);
             $.post("/api/friends", newFriend)
                 .then(function (data) {
-                    // console.log(data);
             });
 
             return false; // false is required if you do don't want to let it submit
-
         },
+
+        // if any fields are invalid
         onFailure: function () {
             alert('Failure');
             return false; // false is required if you do don't want to let it submit                                            

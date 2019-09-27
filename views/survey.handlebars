@@ -1,0 +1,205 @@
+<div class="ui segment">
+    <h1 class="ui center aligned header">Star Trek Character Quiz</h1>
+    <form id="inputForm" action="POST" class="ui form">
+        <h4 class="ui horizontal divider header">
+            About You
+        </h4>
+
+        <div class="required field">
+            <label for="name">Name</label>
+            <div class="ui fluid left icon input">
+                <input type="text" name="name" id="name" placeholder="Name" required />
+                <i class="user icon"></i>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="img">Image Url</label>
+            <div class="ui fluid left icon input">
+                <input type="text" name="img" id="img" placeholder="Image Url" required />
+                <i class="image icon"></i>
+            </div>
+        </div>
+
+        <h4 class="ui horizontal divider header">
+            Personality Questions
+        </h4>
+
+        {{#each questions}}
+            <div class="required field">
+                <label for="{{id}}">{{question}}</label>
+                <div class="ui fluid selection dropdown">
+                    <input type="hidden" name="{{id}}" id="{{id}}" required />
+                    <i class="dropdown icon"></i>
+                    <div class="default text">Select an Option</div>
+                    <div class="menu">
+                        <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                        <div class="item" data-value="2">2</div>
+                        <div class="item" data-value="3">3</div>
+                        <div class="item" data-value="4">4</div>
+                        <div class="item" data-value="5">5 (Strongly Agree)</div>
+                    </div>
+                </div>
+            </div>
+        {{/each}}
+
+        <div class="required field">
+            <label for="question_1">1. Are you a strict follower of rules?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_1" id="question_1" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="question_2">2. Are you void of emotion?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_2" id="question_2" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="question_3">3. Are you usually cynical?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_3" id="question_3" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="question_4">4. Are you self-sacrificing?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_4" id="question_4" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="question_5">5. Do you often counsel others?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_5" id="question_5" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="required field">
+            <label for="question_6">6. Do others often have to tell you to calm down?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_6" id="question_6" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+        <div class="required field">
+            <label for="question_7">7. Are you charismatic?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_7" id="question_7" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+        <div class="required field">
+            <label for="question_8">8. Are you jovial?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_8" id="question_8" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+        <div class="required field">
+            <label for="question_9">9. Are you good at delegating?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_9" id="question_9" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+        <div class="required field">
+            <label for="question_10">10. Do you follow orders?</label>
+            <div class="ui fluid selection dropdown">
+                <input type="hidden" name="question_10" id="question_10" required />
+                <i class="dropdown icon"></i>
+                <div class="default text">Select an Option</div>
+                <div class="menu">
+                    <div class="item" data-value="1">1 (Strongly Disagree)</div>
+                    <div class="item" data-value="2">2</div>
+                    <div class="item" data-value="3">3</div>
+                    <div class="item" data-value="4">4</div>
+                    <div class="item" data-value="5">5 (Strongly Agree)</div>
+                </div>
+            </div>
+        </div>
+        <input class="fluid ui button" type="submit" id="submit"></input>
+
+    </form>
+
+</div>
