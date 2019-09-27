@@ -1,6 +1,7 @@
 
 const fs = require('fs');
 
+
 module.exports = function(app, path){
 
     let friends = JSON.parse(fs.readFileSync('./app/data/friends.json', 'utf-8'));
