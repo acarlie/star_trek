@@ -51,6 +51,23 @@ const UTILS = {
 
         return fields;
     },
+    closest: function(arr, user){
+        let scores = [];
+
+        arr.forEach(function(obj){
+            let score = 0;
+            obj.scores.forEach(function(num, index){
+                score += Math.abs(num - user.scores[index]);
+            });
+            scores.push({ name: obj.name, photo: obj.photo, score: score });
+        })
+
+        scores.sort(function(a, b) {
+            return a.score - b.score;
+        });
+
+        return scores[0];
+    },
     newFriend: function(name, img, arr){
         return {name: name, photo: img, scores: arr};
     }
