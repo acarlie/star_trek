@@ -18,7 +18,6 @@ $(document).ready(function () {
         // if all fields are validated
         onSuccess: function () {
 
-            alert('Success');
             let scores = UTILS.getVals(questions);
             let newFriend = UTILS.newFriend( UTILS.val('name'), UTILS.val('img'), scores);
 
@@ -26,12 +25,16 @@ $(document).ready(function () {
                 .then(function (data) {
             });
 
+            $('#success').modal('show');
+
+
             return false; // false is required if you do don't want to let it submit
         },
 
         // if any fields are invalid
         onFailure: function () {
-            alert('Failure');
+            // alert('Failure');
+            $('#error').modal('show');
             return false; // false is required if you do don't want to let it submit                                            
         },
     });

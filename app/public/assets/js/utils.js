@@ -2,17 +2,27 @@ const UTILS = {
     fields: {
         name: {
             identifier: 'name',
-            rules: [{
-                type: 'regExp[/^[a-z\s]*$/i]',
-                prompt: 'Please only enter valid names.'
-            }]
+            rules: [
+                {
+                    type: 'regExp[/^[a-z\s]*$/i]',
+                    prompt: 'Please only enter valid names.'
+                },
+                {
+                    type: 'empty', prompt: 'Please enter your name.'
+                }
+            ]
         },
         img: {
             identifier: 'img',
-            rules: [{
-                type: 'regExp[/^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$/]',
-                prompt: 'Please enter a valid image url.'
-            }]
+            rules: [
+                {
+                    type: 'regExp[/^https?://(?:[a-z0-9\-]+\.)+[a-z]{2,6}(?:/[^/#?]+)+\.(?:jpg|gif|png)$/]',
+                    prompt: 'Please enter a valid image url.'
+                }, 
+                {
+                    type: 'empty', prompt: 'Please enter an image file.'
+                }
+            ]
         }
     },
     val: function (id){

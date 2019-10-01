@@ -18,5 +18,3 @@ require('./app/routing/htmlRoutes')(app, path);
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
-
-// nodemon server.js localhost 3000

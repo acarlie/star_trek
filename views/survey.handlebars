@@ -43,9 +43,29 @@
                 </div>
             </div>
         {{/each}}
-
+        
         
         <input class="fluid ui button" type="submit" id="submit"></input>
+        
+        <div id="error" class="ui modal">
+            <div class="header">Quiz not submitted.</div>
+            <div class="content">
+                <p>Please fill out all questions!</p>
+            </div>
+            <div class="actions">
+                <div class="ui approve button">Okay</div>
+            </div>
+        </div>
+
+        <div id="success" class="ui modal">
+            <div class="header">Your closest match was:</div>
+            <div class="content">
+                <p>info here</p>
+            </div>
+            <div class="actions">
+                <div class="ui approve button">Okay</div>
+            </div>
+        </div>
 
     </form>
 
