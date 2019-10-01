@@ -68,6 +68,15 @@ const UTILS = {
 
         return scores[0];
     },
+    renderModal(url, input, prefix){
+        let me = this;
+        $.get("/api/" + url, function(data){
+            let closest = me.closest(data, input);
+            $('#' + prefix + 'Name').text(closest.name);
+            $('#' + prefix + 'Image').html('<img src=' + closest.photo + '>');
+            $('#' + prefix).modal('show');
+        });
+    },
     newFriend: function(name, img, arr){
         return {name: name, photo: img, scores: arr};
     }

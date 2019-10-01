@@ -21,31 +21,15 @@ $(document).ready(function () {
             let scores = UTILS.getVals( questions );
             let newFriend = UTILS.newFriend( UTILS.val('name'), UTILS.val('img'), scores );
 
-            $.get("/api/characters", function(data){
-                let closest = UTILS.closest(data, newFriend);
-                $('#charName').text(closest.name);
-                console.log(closest.photo)
-                $('#charImage').html('<img src=' + closest.photo + '>');
-                console.log(closest);
-                $('#character').modal('show');
-
-            });
-
-            $.get("/api/trekkies", function(data){
-                let closest = UTILS.closest(data, newFriend);
-                $('#trekkieName').text(closest.name);
-                console.log(closest.photo)
-                $('#trekkieImage').html('<img src=' + closest.photo + '>');
-                console.log(closest);
-                $('#trekkie').modal('show');
-            });
+            UTILS.renderModal("characters", newFriend, "char");
+            UTILS.renderModal("trekkies", newFriend, "trekkie");
 
             $.post("/api/trekkies", newFriend)
                 .then(function (data) {
             });
 
-
-
+            $('input[type=text]').val("");
+            $('.ui.dropdown').dropdown('clear');
             return false; // false is required if you do don't want to let it submit
         },
 

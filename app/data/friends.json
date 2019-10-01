@@ -622,5 +622,53 @@
             2,
             2
         ]
+    },
+    {
+        "name": "a",
+        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
+        "scores": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "name": "a",
+        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
+        "scores": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "name": "a",
+        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
+        "scores": [
+            3,
+            4,
+            4,
+            4,
+            4,
+            2,
+            3,
+            2,
+            1,
+            2
+        ]
     }
 ]
