@@ -22,14 +22,19 @@ $(document).ready(function () {
             let newFriend = UTILS.newFriend( UTILS.val('name'), UTILS.val('img'), scores );
 
             UTILS.renderModal("characters", newFriend, "char");
-            UTILS.renderModal("trekkies", newFriend, "trekkie");
 
-            $.post("/api/trekkies", newFriend)
-                .then(function (data) {
+            $('#charBtn').on('click', function(e){
+                UTILS.renderModal("trekkies", newFriend, "trekkie");
+
+                $.post("/api/trekkies", newFriend)
+                    .then(function (data) {
+                });
+
+                $('input[type=text]').val("");
+                $('.ui.dropdown').dropdown('clear');
             });
-
-            $('input[type=text]').val("");
-            $('.ui.dropdown').dropdown('clear');
+        
+            
             return false; // false is required if you do don't want to let it submit
         },
 

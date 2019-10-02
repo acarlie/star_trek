@@ -4,7 +4,7 @@ const UTILS = {
             identifier: 'name',
             rules: [
                 {
-                    type: 'regExp[/^[a-z\s]*$/i]',
+                    type: 'regExp[/[a-z][a-z\s]*$/gi]',
                     prompt: 'Please only enter valid names.'
                 },
                 {

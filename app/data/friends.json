@@ -1,7 +1,7 @@
 [
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Samantha Cristoforetti",
+        "photo": "/assets/images/trekkie-1.jpg",
         "scores": [
             5,
             1,
@@ -16,659 +16,83 @@
         ]
     },
     {
-        "name": "Test",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "name": "Phillip J. Fry",
+        "photo": "/assets/images/trekkie-2.jpg",
         "scores": [
             2,
             3,
             4,
-            5,
-            4,
             2,
-            4,
+            1,
+            5,
             3,
             2,
+            3,
             1
         ]
     },
     {
-        "name": "a",
-        "photo": "kitten.gif",
+        "name": "Spock the Dog",
+        "photo": "/assets/images/trekkie-4.jpg",
         "scores": [
-            3,
-            1,
             5,
-            3,
-            1,
-            5,
-            1,
-            5,
-            1,
-            3
-        ]
-    },
-    {
-        "name": "c",
-        "photo": "dog.png",
-        "scores": [
-            2,
-            3,
             4,
             2,
             1,
+            3,
             5,
             2,
-            3,
+            4,
             5,
             2
         ]
     },
     {
-        "name": "c",
-        "photo": "fish.png",
-        "scores": [
-            3,
-            3,
-            1,
-            5,
-            1,
-            4,
-            2,
-            5,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "kitten.jpg",
-        "scores": [
-            1,
-            2,
-            3,
-            2,
-            3,
-            4,
-            5,
-            4,
-            5,
-            5
-        ]
-    },
-    {
-        "name": "$#%&#&%^&%%75",
-        "photo": "kittn.jpg",
-        "scores": [
-            3,
-            1,
-            2,
-            3,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://sydneydogsandcatshome.org/wp-content/uploads/2018/06/Kittens27-768x487.jpg",
-        "scores": [
-            3,
-            4,
-            4,
-            1,
-            5,
-            3,
-            4,
-            3,
-            5,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "$%#456745",
-        "scores": [
-            3,
-            4,
-            4,
-            1,
-            5,
-            3,
-            4,
-            3,
-            5,
-            1
-        ]
-    },
-    {
-        "name": "%*&%^&^&(%&*(",
-        "photo": "https://sydneydogsandcatshome.org/wp-content/uploads/2018/06/Kittens27-768x487.jpg",
-        "scores": [
-            3,
-            3,
-            5,
-            1,
-            3,
-            4,
-            3,
-            3,
-            4,
-            2
-        ]
-    },
-    {
-        "name": "%$^&%$^*%^*^",
-        "photo": "%^&*^%^&%*&%^",
-        "scores": [
-            4,
-            1,
-            5,
-            1,
-            1,
-            4,
-            4,
-            5,
-            5,
-            5
-        ]
-    },
-    {
-        "name": "ac",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            2,
-            5,
-            3,
-            5,
-            5,
-            3,
-            1,
-            4,
-            4
-        ]
-    },
-    {
-        "name": "Am",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            4,
-            null,
-            5,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            4,
-            null,
-            5,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            4,
-            4,
-            5,
-            4,
-            2,
-            5,
-            4,
-            2,
-            5,
-            4
-        ]
-    },
-    {
-        "name": "Amelia",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            4,
-            4,
-            5,
-            2,
-            1,
-            2,
-            4,
-            5,
-            3
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            2,
-            2,
-            3,
-            3,
-            3,
-            4,
-            5,
-            2,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            4,
-            2,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "atest",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "Amelia",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            4,
-            4,
-            4,
-            4,
-            5,
-            5,
-            2,
-            2,
-            5
-        ]
-    },
-    {
-        "name": "atestingtesting",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            1,
-            5,
-            5,
-            5,
-            4,
-            2,
-            2,
-            2,
-            2,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
+        "name": "Kirk the Cat",
+        "photo": "/assets/images/trekkie-5.jpg",
         "scores": [
             5,
-            1,
-            1,
-            1,
-            1,
-            1,
-            2,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            2,
-            2,
-            3,
-            3,
-            3,
-            2,
-            3,
-            2,
-            3,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            2,
-            3,
-            4,
-            5,
-            3,
-            3,
-            3,
-            3,
-            4,
-            5
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            3,
             4,
             4,
-            5,
-            5,
+            2,
             3,
-            3,
+            1,
+            1,
             4,
-            4
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            2,
-            2,
-            3,
-            4,
-            4,
-            3,
-            3,
-            3,
-            3
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            2,
-            3,
-            3,
-            4,
-            2,
-            3,
-            5,
-            3,
-            2,
-            5
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            2,
-            3,
-            3,
-            2,
-            3,
-            3,
-            3,
-            1,
-            3,
-            3
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            2,
-            4,
-            4,
-            4,
-            4,
-            4,
-            3,
-            2,
-            2,
-            3
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            3,
-            4,
-            4,
-            3,
-            3,
-            2,
-            2,
-            2,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            3,
-            3,
-            2,
-            3,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            3,
-            3,
-            2,
-            3,
-            2,
-            2,
-            2,
-            2,
-            2,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            1,
-            1,
-            1,
-            1,
-            2,
-            1,
-            1,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            4,
-            2,
-            5,
-            4,
-            2,
-            2,
-            4,
-            3,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            1,
-            1,
-            1,
-            1,
-            1,
-            2,
-            2,
-            2,
-            2
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            1,
-            1,
-            3,
-            5,
-            1,
-            1,
-            1,
-            2,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            3,
-            1,
-            1,
-            2,
-            1,
-            2,
-            2,
-            2,
             1,
             4
         ]
     },
     {
-        "name": "Test",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
+        "name": "Buddy",
+        "photo": "/assets/images/trekkie-6.jpg",
         "scores": [
-            3,
-            3,
-            3,
-            2,
+            5,
             3,
             2,
-            2,
+            1,
+            5,
+            4,
+            3,
             2,
             2,
             2
         ]
     },
     {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
+        "name": "Trekkie",
+        "photo": "https://dogzone-tcwebsites.netdna-ssl.com/wp-content/uploads/2014/12/Star_Trek_Dog_Names.jpg",
         "scores": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://www.petmd.com/sites/default/files/petmd-dog-tongue.jpg",
-        "scores": [
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1,
-            1
-        ]
-    },
-    {
-        "name": "a",
-        "photo": "https://ichef.bbci.co.uk/news/660/cpsprodpb/AD5D/production/_106018344_garf_face.jpg",
-        "scores": [
-            3,
-            4,
-            4,
-            4,
-            4,
             2,
+            4,
             3,
             2,
-            1,
-            2
+            2,
+            3,
+            3,
+            3,
+            2,
+            3
         ]
     }
 ]
