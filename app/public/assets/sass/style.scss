@@ -18,19 +18,21 @@ body{
 }
 
 main.container{
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 1em;
+    margin: 0 auto;
+
 }
 
 // Desktop
 @media only screen and (min-width: 1024px) {
-    .container{
+    main.container{
         width: 50%;
-        margin: 0 auto;
     }
 }
 
 // Tablet & Ipad
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-   
+    main.container{
+        width: 80%;
+    }
 }
