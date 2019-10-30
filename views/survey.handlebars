@@ -1,8 +1,8 @@
-<div class="ui segment">
-    <h1 class="ui center aligned header">Star Trek Character Quiz</h1>
+<div class="ui segment" id="survey">
+    <h1 class="ui center aligned header theme-header">Star Trek Character Quiz</h1>
     <form id="inputForm" action="POST" class="ui form">
         
-        <h4 class="ui horizontal divider header">
+        <h4 class="ui horizontal divider header theme-header">
             About You
         </h4>
 
@@ -22,7 +22,7 @@
             </div>
         </div>
 
-        <h4 class="ui horizontal divider header">
+        <h4 class="ui horizontal divider header theme-header">
             Personality Questions
         </h4>
 
@@ -44,21 +44,10 @@
             </div>
         {{/each}}
         
-        
         <input class="fluid ui button" type="submit" id="submit"></input>
-        
-        <div id="error" class="ui modal">
-            <div class="header">Quiz not submitted.</div>
-            <div class="content">
-                <p>Please fill out all questions!</p>
-            </div>
-            <div class="actions">
-                <div class="ui approve button">Okay</div>
-            </div>
-        </div>
 
         <div id="char" class="ui modal">
-            <div class="header">Your closest character match was: <span id="charName"><!-- Name Here --></span></div>
+            <div class="header theme-header">Your closest character match was: <span id="charName"><!-- Name Here --></span></div>
             <div class="image content">
                  <div id="charImage" class="ui medium image"><!-- Image Here --></div>
                  <div class="description"></div>
@@ -68,15 +57,14 @@
             </div>
         </div>
 
-        
-        <div id="trekkie" class="ui modal">
-            <div class="header">Your closest fan match was: <span id="trekkieName"><!-- Name Here --></span></div>
+        <div id="trekkie" class="ui modal opacity-hidden">
+            <div class="header theme-header">Your closest fan match was: <span id="trekkieName"><!-- Name Here --></span></div>
             <div class="image content">
                  <div id="trekkieImage" class="ui medium image"><!-- Image Here --></div>
                  <div class="description"></div>
             </div>
             <div class="actions">
-                <div class="ui approve button">Okay</div>
+                <a href="/"><div id="trekkieBtn" class="ui approve button">Okay</div></a>
             </div>
         </div>
 

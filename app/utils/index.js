@@ -1,8 +1,8 @@
-function genQuestions(arr){
+function genQuestions (arr) {
     let questions = [];
 
     arr.forEach((el, i) => {
-        let obj = {num: i + 1, id: "question_" + i, question: el}
+        const obj = { num: i + 1, id: 'question_' + i, question: el };
         questions = questions.concat([obj]);
     });
 
@@ -10,5 +10,5 @@ function genQuestions(arr){
 }
 
 module.exports = {
-    genQuestions: genQuestions,
-}
+    genQuestions: genQuestions
+};

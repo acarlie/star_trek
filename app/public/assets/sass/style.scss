@@ -1,15 +1,29 @@
-$shadow: 0px 3px 10px rgba(0,0,0,.10);
-$box-padding: .8em;
-$color-primary: #f857a8;
-$color-secondary:#ff5858;
-$color-neutral-lt: #fff;
-$color-neutral-med: #ddd;
-$headings-font: 'Teko', sans-serif;
+$headings-font: 'Exo 2', sans-serif;
 
 @mixin dark-gradient{
-    background: #141E30;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #141E30; 
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);  
+    background: linear-gradient(to right, #243B55, #141E30);
+    font-family: 'Roboto', sans-serif;
+}
+
+#survey, #main{
+    h1, h2, h3, h4, h5, h6{
+        &.theme-header{
+            font-family: $headings-font;
+        }
+    }
+    .divider, #submit{
+        margin-top: 2em;
+    }
+}
+
+.flex-container{
+    min-height: calc(100vh - 2em);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
 }
 
 body{
@@ -23,10 +37,27 @@ main.container{
 
 }
 
+div.ui.segment{
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.opacity-hidden{
+    opacity: 0;
+}
+
+.modal{
+    transition: opacity .5s;
+}
+
+.text-center{
+    text-align: center;
+}
+
 // Desktop
 @media only screen and (min-width: 1024px) {
     main.container{
-        width: 50%;
+        width: 40%;
     }
 }
 

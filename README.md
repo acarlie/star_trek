@@ -6,4 +6,3 @@
 * Click 'Start the Quiz'.
 * Fill out the quiz completely, and then hit submit.
 * Your entries will be compared against the characters and trekkies APIs, and a modal will appear with your results.
-
